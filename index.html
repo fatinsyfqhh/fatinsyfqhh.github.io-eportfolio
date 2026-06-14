@@ -76,15 +76,16 @@
 
     .nav-links {
       display: flex;
-      gap: clamp(.5rem, 2vw, 2rem);
+      gap: clamp(.3rem, 1.5vw, 2rem);
       list-style: none;
+      flex-wrap: wrap;
     }
 
     .nav-links a {
-      font-size: .83rem;
+      font-size: .72rem;
       font-weight: 500;
       color: var(--cream2);
-      letter-spacing: .05em;
+      letter-spacing: .03em;
       text-transform: uppercase;
     }
 
@@ -437,16 +438,39 @@
 
     /* Handle responsive sizing cleanly */
     @media (max-width: 768px) {
-      .hero-header-row {
-        flex-direction: column-reverse;
-        align-items: flex-start;
-        gap: 1.5rem;
-      }
-      .profile-avatar {
-        width: 120px;
-        height: 120px;
-      }
+    .hero-header-row {
+    	flex-direction: row;
+    	align-items: center;
+    	justify-content: space-between;
+    	gap: 1rem;
+     }
+     .profile-avatar {
+   	width: 100px;
+    	height: 100px;
+     }
+     h1.name {
+    	font-size: 2rem;
+     }
+     .hero-role {
+    	font-size: .75rem;
     }
+    nav {
+      height: auto;
+      padding: 0.6rem clamp(1rem, 4vw, 2rem);
+      flex-wrap: wrap;
+      gap: 0.4rem;
+    }
+    .nav-logo {
+      font-size: 1.1rem;
+    }
+    .nav-links {
+      gap: 0.5rem;
+    }
+    .nav-links a {
+      font-size: .68rem;
+    }
+  }
+
   </style>
 </head>
 <body>
@@ -540,7 +564,7 @@
   		<img src="lab2.jpg" alt="Lab 2 Screenshot" />
 	</div>
         <div class="card-video">
-          <iframe src="https://www.youtube.com/embed/VIDEO_ID_LAB2" title="Lab 2 Interaction demo" allowfullscreen loading="lazy"></iframe>
+          <iframe src="https://www.youtube.com/embed/mWG1FvPbUIU" title="Lab 1 UI demo" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
         </div>
         <div class="card-body">
           <span class="card-tag">Lab 02</span>
@@ -548,7 +572,7 @@
           <p class="card-desc">Handling user events, managing state with remember and mutableStateOf and adding dynamic UI behaviour.</p>
           <p class="card-reflection"><b>Reflection:</b> This lab introduced me to how Android apps respond to user input through state management using remember and mutableStateOf. I built interactive UI elements and saw firsthand how the UI automatically recomposes when state changes.</p>
           <div class="card-actions">
-            <a class="btn-github" href="https://github.com/fatin-syafiqah/lab2-repo" target="_blank" rel="noopener noreferrer">
+            <a class="btn-github" href="https://github.com/fatinsyfqhh/A210139_Fatin_DrNazatul_Lab02" target="_blank" rel="noopener noreferrer">
               <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
               View on Github
             </a>
@@ -562,7 +586,7 @@
   		<img src="lab3.jpg" alt="Lab 3 Screenshot" />
 	</div>
         <div class="card-video">
-          <iframe src="https://www.youtube.com/embed/VIDEO_ID_LAB3" title="Lab 3 Material Design demo" allowfullscreen loading="lazy"></iframe>
+          <iframe src="https://www.youtube.com/embed/iSaXrx_berY" title="Lab 1 UI demo" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
         </div>
         <div class="card-body">
           <span class="card-tag">Lab 03</span>
@@ -570,7 +594,7 @@
           <p class="card-desc">Applying Material 3 theming, colour schemes and adaptive components throughout an Android app.</p>
           <p class="card-reflection"><b>Reflection:</b> I explored Material 3 theming in this lab, applying consistent colour schemes, typography and pre-built components across an app. It taught me how much visual polish can be achieved just by following design guidelines properly. I also gained an appreciation for accessibility and how thoughtful design choices affect the overall user experience.</p>
           <div class="card-actions">
-            <a class="btn-github" href="https://github.com/fatin-syafiqah/lab3-repo" target="_blank" rel="noopener noreferrer">
+            <a class="btn-github" href="https://github.com/fatinsyfqhh/A210139_Fatin_DrNazatul_Lab03" target="_blank" rel="noopener noreferrer">
               <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
               View on Github
             </a>
@@ -584,7 +608,7 @@
   		<img src="lab4.jpg" alt="Lab 4 Screenshot" />
 	</div>
         <div class="card-video">
-          <iframe src="https://www.youtube.com/embed/VIDEO_ID_LAB4" title="Lab 4 Navigation demo" allowfullscreen loading="lazy"></iframe>
+          <iframe src="https://www.youtube.com/embed/8HC_n0LKYII" title="Lab 1 UI demo" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
         </div>
         <div class="card-body">
           <span class="card-tag">Lab 04</span>
@@ -592,7 +616,7 @@
           <p class="card-desc">Implementing Jetpack Navigation Component with Compose, managing back stack and passing arguments.</p>
           <p class="card-reflection"><b>Reflection:</b> This lab walked me through setting up multi-screen navigation using Jetpack Navigation Component with Compose. I learned how to define navigation routes, pass arguments between screens and manage the back stack correctly. It made me realise how essential good navigation structure is for building apps that feel smooth and intuitive to use.</p>
           <div class="card-actions">
-            <a class="btn-github" href="https://github.com/fatin-syafiqah/lab4-repo" target="_blank" rel="noopener noreferrer">
+            <a class="btn-github" href="https://github.com/fatinsyfqhh/A210139_Fatin_DrNazatul_Lab04" target="_blank" rel="noopener noreferrer">
               <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
               View on Github
             </a>
@@ -606,7 +630,7 @@
   		<img src="lab5.jpg" alt="Lab 5 Screenshot" />
 	</div>
         <div class="card-video">
-          <iframe src="https://www.youtube.com/embed/VIDEO_ID_LAB5" title="Lab 5 Room demo" allowfullscreen loading="lazy"></iframe>
+          <iframe src="https://www.youtube.com/embed/G_id9JGElhc" title="Lab 1 UI demo" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
         </div>
         <div class="card-body">
           <span class="card-tag">Lab 05</span>
@@ -614,7 +638,7 @@
           <p class="card-desc">Persisting local data with Room, defining entities and DAOs and observing changes with Kotlin Flow.</p>
           <p class="card-reflection"><b>Reflection:</b> In this lab, I implemented local data persistence using Room, defining entities, DAOs and a database class to store and retrieve data. Connecting Room with Kotlin Flow to observe real-time data changes was the most challenging but rewarding part. This lab gave me the foundation I needed to build apps that work reliably even without an internet connection.</p>
           <div class="card-actions">
-            <a class="btn-github" href="https://github.com/fatin-syafiqah/lab5-repo" target="_blank" rel="noopener noreferrer">
+            <a class="btn-github" href="https://github.com/fatinsyfqhh/A210139_Fatin_DrNazatul_Lab05" target="_blank" rel="noopener noreferrer">
               <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
               View on Github
             </a>
@@ -633,7 +657,7 @@
       <!-- PROJECT 1 -->
       <article class="card">
         <div class="card-video">
-          <iframe src="https://www.youtube.com/embed/VIDEO_ID_PROJECT1" title="Project 1 showcase" allowfullscreen loading="lazy"></iframe>
+          <iframe src="https://www.youtube.com/embed/aYutiVhEp94" title="Lab 1 UI demo" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
         </div>
         <div class="card-body">
           <span class="card-tag">Project 01 · Lab 4 + Working Features</span>
@@ -641,7 +665,7 @@
           <p class="card-desc"><b>Problem Statement:</b> Food accessibility and awareness remain important issues related to <b>SDG 2 : Zero Hunger</b>, where users may face difficulties in managing food-related information and making informed decisions. A user-friendly mobile application is needed to provide an organised platform that improves interaction and accessibility of food resources.</p>
           <p class="card-reflection"><b>Reflection:</b> Through the development of <b>ResQBite</b>, I learned how to create a structured mobile application by implementing UI design, user interaction, Material Design components and navigation features using Kotlin and Jetpack Compose. This project improved my understanding of designing an application that is not only visually appealing but also provides a smoother user experience. I also learned the importance of planning application flow to ensure features are easy for users to access.</p>
           <div class="card-actions">
-            <a class="btn-github" href="https://github.com/fatin-syafiqah/project1-repo" target="_blank" rel="noopener noreferrer">
+            <a class="btn-github" href="https://github.com/fatinsyfqhh/A210139_Fatin_DrNazatul_Project1" target="_blank" rel="noopener noreferrer">
               <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
               View on Github
             </a>
@@ -652,7 +676,7 @@
       <!-- PROJECT 2 -->
       <article class="card">
         <div class="card-video">
-          <iframe src="https://www.youtube.com/embed/VIDEO_ID_PROJECT2" title="Project 2 showcase" allowfullscreen loading="lazy"></iframe>
+          <iframe src="https://www.youtube.com/embed/7Z_EXdOzVBw" title="Lab 1 UI demo" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
         </div>
         <div class="card-body">
           <span class="card-tag">Project 02 · Lab 5 + API + Sensors + Cloud</span>
@@ -660,7 +684,7 @@
           <p class="card-desc"><b>Problem Statement:</b> Managing food resources efficiently can be challenging, especially when users lack access to organised information and connected digital solutions. <b>ResQBite</b> supports <b>SDG 2 : Zero Hunger</b> by addressing the need for a smarter platform that improves food-related data management through the integration of database storage, external information sources and mobile device technologies.</p>
           <p class="card-reflection"><b>Reflection:</b> This project expanded my knowledge in developing a more advanced mobile application by integrating Room Database, Firebase Firestore, API services and GPS sensor functionality. I learned how to manage and connect different technologies to improve application performance and user experience. The development process also helped me understand how software solutions can be designed to support real-world challenges related to food accessibility and sustainability.</p>
           <div class="card-actions">
-            <a class="btn-github" href="https://github.com/fatin-syafiqah/resqbite-repo" target="_blank" rel="noopener noreferrer">
+            <a class="btn-github" href="https://github.com/fatinsyfqhh/A210139_Fatin_DrNazatul_Project2" target="_blank" rel="noopener noreferrer">
               <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
               View on Github
             </a>
@@ -675,7 +699,7 @@
     <span class="section-eyebrow">growth &amp; learning journey</span>
     <h2 class="section-title">My <span>Reflection</span></h2>
     <div class="reflection-box">
-      <p>Throughout this course, I gained valuable experience in developing mobile applications from the fundamental concepts to a more complete and functional system. Starting from basic UI design and user interaction, I gradually learned how to implement Material Design, navigation, database management, API integration, cloud services and sensor-based features using Kotlin and Jetpack Compose. The progression from lab exercises to project works helped me understand how each component contributes to building a reliable and user-friendly application. Developing ResQBite also allowed me to apply my technical knowledge to address a real-world issue related to <b>SDG 2 : Zero Hunger</b>, while improving my problem-solving, planning and software development skills. Overall, this course strengthened my understanding of mobile application development and showed me the importance of creating technology solutions that provide meaningful impact to users.</p>
+      <p>Throughout this course, I grew significantly as a  student-developer. Starting from simply arranging composables on a screen in Lab 1, to building a fully connected app with cloud storage, APIs and GPS integration in Project 2. One of my biggest challenges was understanding how to manage state across multiple screens, especially when connecting Room Database with Kotlin Flow for real-time updates, as debugging data that wasn't syncing correctly took considerable time and patience. I also struggled initially with Jetpack Navigation, as passing arguments between screens felt unintuitive at first but working through it gave me a much deeper understanding of how app architecture should be planned before writing a single line of code. Building <b>ResQBite</b> pushed me to think beyond just making the app functional. I wanted it to genuinely reflect the mission of <b>SDG 2 : Zero Hunger</b>, so every feature from food listing to location-based pickup was designed with real users in mind, not just assignment requirements. This course changed how I approach problem-solving.</p>
     </div>
   </section>
 
