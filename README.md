@@ -1,14 +1,39 @@
-# ResQBite: Mobile Food Rescue Platform
-ResQBite is a modern, offline-first Android application designed to combat food insecurity and minimize community food waste. Developed as part of the Mobile App Application subject at Universiti Kebangsaan Malaysia (UKM), the platform optimizes excess supply lines by bridging the gap between local food donors and nearby distribution nodes.
+# fatinsyfqhh.github.io-eportfolio
 
-## 📌 Project Description
-In many urban communities, massive amounts of perfectly edible surplus food are discarded by businesses and individuals daily. Concurrently, vulnerable populations face immediate food instability. 
+### SDG Theme
+SDG 2: Zero Hunger
 
-ResQBite provides a localized, data-driven solution to this logistics mismatch. Built using Jetpack Compose and structured under clean MVVM architecture patterns, the application allows donors to instantly log surplus items and track donation centers via hardware sensors. 
+### Project Description
+ResQBite is a mobile application developed to support SDG 2: Zero Hunger by helping users manage food information, reduce food waste and encourage food sharing within the community. The application combines local storage, cloud storage, API integration and GPS sensor functionality to provide a more connected user experience.
 
-## 🌱 Sustainable Development Goals (SDG) Alignment
-ResQBite is explicitly engineered to support SDG 2 : Zero Hunger. 
+### Features
+* Multi-screen navigation using Jetpack Compose
+* Room Database for local food record storage
+* Firebase Firestore for cloud data sharing
+* OpenFoodFacts API integration for food information retrieval
+* GPS sensor integration using Google Play Services Location
+* ViewModel state management
+* Material Design user interface
 
-By digitizing and accelerating the redistribution of surplus food, the platform directly targets:
-- Ending hunger and ensuring access by all people to safe, nutritious and sufficient food all year round.
-- Adopting measures to ensure the proper functioning of food commodity markets and their derivatives to help limit extreme food price volatility.
+### Technologies Used
+* Kotlin
+* Jetpack Compose
+* Room Database
+* Firebase Firestore
+* Retrofit
+* OpenFoodFacts API
+* Google Play Services Location
+* Android Studio
+
+### Setup Instructions
+1. Clone the repository.
+2. Open the project in Android Studio.
+3. Sync Gradle dependencies.
+4. Configure Firebase using the provided google-services.json file.
+5. Build and run the application on an Android device or emulator.
+
+### Developer
+* Name: Nurul Fatin Syafiqah binti Hassan
+* Matric Number: A210139
+* Course: Mobile Application Programming
+* Instructor: Dr. Nazatul Aini binti Abd Majid
